@@ -30,18 +30,6 @@
 						</div>
 					</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-					</nav>
-
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
@@ -49,7 +37,31 @@
 								<h1>Pay a small fee and get advice from people you can trust.</h1>
 								<p>Temporary filler text.</p>
 							</header>
-							<section class="tiles">
+							<section>
+								<h2>Sign Up Now</h2>
+								<form id="submit-to-google-sheet" method="post" action="#">
+									<div class="fields">
+										<div class="field third">
+											<input type="text" name="wechatID" id="wechatID" placeholder="WeChat ID" />
+										</div>
+										<div class = "field half">
+										  <select name="expert">
+										    <option disabled selected value="">Please select who you'd like to speak with</option>
+										    <option value="xiangyang">Xiangyang Du</option>
+										    <option value="fanjie">Fanjie Xiao</option>
+										    <option value="melissa">Melissa Du</option>
+										    <option value="alice">Alice Deng</option>
+										  </select>
+										 </div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Sign Up" class="primary" /></li>
+									</ul>
+									<a href="#adviceGivers" class="button">See Advice Givers</a>
+								</form>
+							</section>
+							
+							<section id="adviceGivers" class="tiles">
 								<article class="style1">
 									<span class="image">
 										<img src="images/xiangyang.jpg" alt="" />
@@ -187,19 +199,30 @@
 			<script src="assets/js/main.js"></script>
 			<script src='assets/js/google-sheet.js'></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<!-- 			<script>
-			  const scriptURL = 'https://script.google.com/macros/s/AKfycby5Qhycw2y3WefFFskiNKz6xZKa6-Tm0l8KrDUNP3j-TM9uaf1q/exec'
-			  const form = document.forms['submit-to-google-sheet']
-
-			  form.addEventListener('submit', e => {
-			    e.preventDefault()
-			    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-			      .then(response => console.log('Success!', response))
-			      .catch(error => console.error('Error!', error.message))
-			  })
-
-
-			</script> -->
+			<script>
+				$(document).ready(function(){
+				  // Add smooth scrolling to all links
+				  $("a").on('click', function(event) {
+				  	console.log("Clicked!");
+				    // Make sure this.hash has a value before overriding default behavior
+				    if (this.hash !== "") {
+				      // Prevent default anchor click behavior
+				      event.preventDefault();
+				      // Store hash
+				      var hash = this.hash;
+				      // Using jQuery's animate() method to add smooth page scroll
+				      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				      $('html, body').animate({
+				        scrollTop: $(hash).offset().top
+				      }, 800, function(){
+				   
+				        // Add hash (#) to URL when done scrolling (default click behavior)
+				        window.location.hash = hash;
+				      });
+				    } // End if
+				  });
+				});
+			</script>
 
 	</body>
 </html>
