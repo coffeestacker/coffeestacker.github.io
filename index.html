@@ -143,7 +143,7 @@
 						<div class="inner">
 							<section>
 								<h2>Sign Up</h2>
-								<form name="submit-to-google-sheet" method="post" action="#">
+								<form id="submit-to-google-sheet" method="post" action="#">
 									<div class="fields">
 										<div class="field half">
 											<input type="text" name="name" id="name" placeholder="Name" />
@@ -176,21 +176,20 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src='assets/js/google-sheet.js'></script>
-			<script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- 			<script>
 			  const scriptURL = 'https://script.google.com/macros/s/AKfycby5Qhycw2y3WefFFskiNKz6xZKa6-Tm0l8KrDUNP3j-TM9uaf1q/exec'
 			  const form = document.forms['submit-to-google-sheet']
 
 			  form.addEventListener('submit', e => {
-			  	console.log("test")
 			    e.preventDefault()
 			    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 			      .then(response => console.log('Success!', response))
 			      .catch(error => console.error('Error!', error.message))
-			  	e.reset()
 			  })
 
 
-			</script>
+			</script> -->
 
 	</body>
 </html>

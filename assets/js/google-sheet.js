@@ -2,8 +2,8 @@
 var request;
 
 // Bind to the submit event of our form
-$("#foo").submit(function(event){
-
+$("#submit-to-google-sheet").submit(function(event){
+    console.log("made it")
     // Abort any pending request
     if (request) {
         request.abort();
@@ -24,7 +24,7 @@ $("#foo").submit(function(event){
 
     // Fire off the request to /form.php
     request = $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbxuqxJcGhNyhy0WV6c12Q2etP3hOB2eOvRUUQ8xuShDMCp_OdU/exec",
+        url: "https://script.google.com/macros/s/AKfycby5Qhycw2y3WefFFskiNKz6xZKa6-Tm0l8KrDUNP3j-TM9uaf1q/exec",
         type: "post",
         data: serializedData
     });
