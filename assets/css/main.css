@@ -3348,7 +3348,7 @@ input, select, textarea {
 				.posts article .image img {
 					display: block;
 					width: 100%;
-					height: 18em;
+					/*height: 18em;*/
 				}
 
 		@media screen and (min-width: 1681px) {
