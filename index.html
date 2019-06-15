@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Wenti</title>
+		<title>问题</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -17,20 +17,12 @@
 						<div class="inner">
 
 							<!-- Logo -->
-							<a href="index.html" class="logo">
+							<a class="logo">
 								<span class="symbol">
 									<img src="images/favicon.png" alt>
 								</span>
-								<span class="title">WenTi</span>
+								<span class="title" style="font-size:1.5em">问题</span>
 							</a>
-							
-							<!-- Nav -->
-<!-- 								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav> -->
-
 						</div>
 					</header>
 
@@ -38,10 +30,12 @@
 					<div id="main">
 						<div class="inner">
 							<header>
-								<h1>Get advice from real people you can trust.</h1>
+<!-- 								<h1>Get advice from real people you can trust.</h1> -->
+								<h1>咨询您喜欢的人</h1>
 							</header>
 							<section>
-								<h2>Sign Up Now</h2>
+								<!-- <h2>Sign Up Now</h2> -->
+								<h2>马上注册</h2>
 <!-- 								<form action="https://getsimpleform.com/messages?form_api_token=045d7caf755db6a209a5b9f00f72e7c3" method="post">
 								  all your input fields here....
 								  <input type='text' name='test' />
@@ -55,11 +49,12 @@
 								<form action="https://getsimpleform.com/messages?form_api_token=045d7caf755db6a209a5b9f00f72e7c3" method="post">
 									<div class="fields">
 										<div class="field third">
-											<input type="text" name="wechatID" id="wechatID" placeholder="Your WeChat ID" />
+											<input type="text" name="wechatID" id="wechatID" placeholder="你的微信账号" />
 										</div>
 										<div class = "field half">
 										  <select name="expert">
-										    <option disabled selected value="">Please select who you'd like to speak with</option>
+										    <option disabled selected value="">请选择您想要的建议人</option>
+										    <!-- <option disabled selected value="">Please select who you'd like to speak with</option> -->
 										    <option value="xiangyang">Xiangyang Du</option>
 										    <option value="fanjie">Fanjie Xiao</option>
 										    <option value="kevin">Kevin Le-Hsiu Cheng</option>
@@ -74,30 +69,33 @@
 										 </div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Sign Up" class="primary" /></li>
-										<li><a href="#adviceGivers" class="button">See Advice Givers</a></li>
+										<li><input type="submit" value="注册" class="primary" /></li>
+										<li>
+											<!-- <a href="#adviceGivers" class="button">See Advice Givers</a> -->
+											<a href="#adviceGivers" class="button"> 建议人介绍</a>
+										</li>
 									</ul>
 								</form>
 							</section>
-							<section>
+							<section id="#adviceGivers">
 									<header class="major">
-										<h2>Advice Givers You Can Talk To</h2>
+										<!-- <h2>Advice Givers You Can Talk To</h2> -->
 									</header>
 									<div class="posts">
 										<article>
 											<a class="image"><img src="images/xiangyang.jpg" alt="" /></a>
 											<h3 id="name">杜向阳 (Xiangyang Du)</h3>
-											<p id="headline">PhD in Aerospace Engineering</p>
-											Get advice about:
+											<p id="headline">航空航天工程博士</p>
+											获得关于以下方面的建议：
 											<ul>
-												<li>How to coach your children to get accepted into Harvard, Stanford, Princeton, Yale, & MIT</li>
+												<li>怎样把您的孩子培养进哈佛、斯坦福、普林斯顿、耶鲁和麻省理工</li>
 											</ul>
-											<p>Consultation Fee: ¥ 620/hr </p>
+											<p>咨询费: ¥ 620/hr </p>
 										</article>
 										<article>
 											<a class="image"><img src="images/venus.jpg" alt="" /></a>
 											<h3 id="name">謝愷妍 (Venus Mia Tse)</h3>
-											<p id="headline">Cornell 2017, Harvard 2021<br>Goldman Sachs</p> Get advice about:
+											<p id="headline">毕业于康奈儿大学和哈佛大学<br>Goldman Sachs</p> 获得关于以下方面的建议：
 											<ul>
 													<li>Studying at American university (Ivy League)</li>
 													<li>Applying to American grad school (Harvard)</li>
@@ -107,7 +105,7 @@
 										<article>
 											<a class="image"><img src="images/aiqi.jpeg" alt="" /></a>
 											<h3 id="name">刘艾琪 (Aiqi Liu) </h3>
-											<p id="headline">Northwestern 2018, Computer Science<br>Software Engineer at Square</p> Get advice about:
+											<p id="headline">Northwestern 2018, Computer Science<br>Software Engineer at Square</p> 获得关于以下方面的建议：
 											<ul>
 													<li>Studying at an American University</li>
 													<li>Working abroad at a U.S. tech company</li>
@@ -117,7 +115,7 @@
 										<article>
 											<a class="image"><img src="images/alice.jpg" alt="" /></a>
 											<h3 id="name">邓惠婷 (Alice Deng)</h3>
-											<p id="headline">Berkeley 2018<br>Product Manager at Dropbox</p> Get advice about:
+											<p id="headline">Berkeley 2018<br>Product Manager at Dropbox</p> 获得关于以下方面的建议：
 											<ul>
 												<li>Interviewing at top US tech companies</li>
 												<li>Studying at University of Berkeley</li>
@@ -127,7 +125,7 @@
 										<article>
 											<a class="image"><img src="images/kevin.jpg" alt="" /></a>
 											<h3 id="name">程乐修 (Kevin Le-Hsiu Cheng)</h3>
-											<p id="headline">Northwestern 2017, Computer Science<br>Software Engineer at Google</p> Get advice about:
+											<p id="headline">Northwestern 2017, Computer Science<br>Software Engineer at Google</p> 获得关于以下方面的建议：
 											<ul>
 													<li>Studying abroad at an American university</li>
 													<li>Working abroad at Google</li>
@@ -137,7 +135,7 @@
 										<article>
 											<a class="image"><img src="images/fanjie.jpg" alt="" /></a>
 											<h3 id="name">Fanjie Xiao</h3>
-											<p id="headline">Brown 2017, Computer Science<br>Software Engineer at Dropbox</p> Get advice about:
+											<p id="headline">Brown 2017, Computer Science<br>Software Engineer at Dropbox</p> 获得关于以下方面的建议：
 											<ul>
 													<li>Studying abroad at an Ivy League College</li>
 													<li>Working abroad at Dropbox</li>
@@ -147,7 +145,7 @@
 										<article>
 											<a class="image"><img src="images/melissa.jpg" alt="" /></a>
 											<h3 id="name">杜莎莎 (Melissa Du)</h3>
-											<p id="headline">Stanford 2018, Computer Science<br>Product Manager at Dropbox</p> Get advice about:
+											<p id="headline">Stanford 2018, Computer Science<br>Product Manager at Dropbox</p> 获得关于以下方面的建议：
 											<ul>
 												<li>Interviewing at top US tech companies</li>
 												<li>Studying Computer Science at Stanford University</li>
@@ -157,7 +155,7 @@
 										<article>
 											<a class="image"><img src="images/henry.jpg" alt="" /></a>
 											<h3 id="name">Henry Weller</h3>
-											<p id="headline">Stanford 2017 <br>Software Engineer at Osaro</p> Get advice about:
+											<p id="headline">Stanford 2017 <br>Software Engineer at Osaro</p> 获得关于以下方面的建议：
 											<ul>
 												<li>Speaking English</li>
 												<li>Studying at Stanford University</li>
@@ -167,7 +165,7 @@
 										<article>
 											<a class="image"><img src="images/natalie.jpg" alt="" /></a>
 											<h3 id="name">Natalie Muenster</h3>
-											<p id="headline">Stanford 2018 <br>Software Engineer at Facebook</p> Get advice about:
+											<p id="headline">Stanford 2018 <br>Software Engineer at Facebook</p> 获得关于以下方面的建议：
 											<ul>
 												<li>Speaking English</li>
 												<li>Studying at Stanford University</li>
@@ -177,7 +175,7 @@
 										<article>
 											<a class="image"><img src="images/ted.jpg" alt="" /></a>
 											<h3 id="name">Ted Kornish</h3>
-											<p id="headline">Software Engineer at Salesforce/Tableau</p> Get advice about:
+											<p id="headline">Software Engineer at Salesforce/Tableau</p> 获得关于以下方面的建议：
 											<ul>
 												<li>Speaking English</li>
 												<li>Startups/Silicon Valley</li>
@@ -192,7 +190,10 @@
 										<span class="image left" style="max-width: 20%"><img src="images/cindy.jpeg" alt="" /></span>
 										<blockquote>WenTi helped me so much during my job search! Having the chance to talk with someone who actually worked at Baidu gave me invaluable insights.<br><br>- Wenjie Da</blockquote></p>
 									<br><br><br><br>
-									<p><span class="image right" style="max-width: 20%"><img src="images/jason.jpg" alt="" /></span><blockquote>Getting connected to someone who actually studied in the US was so helpful! They gave me valuable advice about choosing a major, the job search process, and tips on what being an international student from China is like.<br><br>-ZhengYuan Zhang</blockquote></p>
+									<p>
+										<span class="image right" style="max-width: 20%">
+											<!-- <img src="images/jason.jpg" alt="" /> -->
+										</span><blockquote>Getting connected to someone who actually studied in the US was so helpful! They gave me valuable advice about choosing a major, the job search process, and tips on what being an international student from China is like.<br><br>-ZhengYuan Zhang</blockquote></p>
 								</section>
 						</div>
 					</div>
