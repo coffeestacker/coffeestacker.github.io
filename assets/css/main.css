@@ -24,6 +24,11 @@
 	text-align: left;
 }
 
+.reviewQuote {
+	display:inline-block; 
+	margin:0 auto;
+}
+
 #nav {
 	width: 100%;
 	float: left;
