@@ -4,11 +4,22 @@
 		<title>问题</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel='icon' href='images/favicon.png' type='image/x-icon'/ >
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+<!-- 		<div id="nav">
+			<ul>
+				<li><a href="#">问题</a></li>
+				<li style="width:100px; font-color:white;">div</li>
+				<li><a href="#">Coin</a></li>
+				<li><a href="#">How it Works</a></li>
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Join</a></li>
+			</ul>
+		</div> -->
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -29,13 +40,14 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<header>
-<!-- 								<h1>Get advice from real people you can trust.</h1> -->
-								<h1>咨询您喜欢的人</h1>
+							<header style="text-align:center;">
+								<h1>Get advice from real people you can trust.</h1>
+								<p>Talk to people who could make a difference in your life.</p>
+								<!-- <h1>咨询您喜欢的人</h1> -->
 							</header>
-							<section>
-								<!-- <h2>Sign Up Now</h2> -->
-								<h2>马上注册</h2>
+							<section style="text-align:center;">
+								<h2>Sign Up Now For the Waiting List</h2>
+								<!-- <h2>马上注册</h2> -->
 <!-- 								<form action="https://getsimpleform.com/messages?form_api_token=045d7caf755db6a209a5b9f00f72e7c3" method="post">
 								  all your input fields here....
 								  <input type='text' name='test' />
@@ -51,37 +63,24 @@
 										<div class="field third">
 											<input type="text" name="wechatID" id="wechatID" placeholder="你的微信账号" />
 										</div>
-										<div class = "field half">
-										  <select name="expert">
-										    <option disabled selected value="">请选择您想要的建议人</option>
-										    <!-- <option disabled selected value="">Please select who you'd like to speak with</option> -->
-										    <option value="xiangyang">杜向阳 (Xiangyang Du)</option>
-										    <option value="fanjie">Fanjie Xiao</option>
-										    <option value="kevin">程乐修 (Kevin Le-Hsiu Cheng)</option>
-										    <option value="aiqi">龚耘 (Kelly)</option>
-										    <option value="aiqi">刘艾琪 (Aiqi Liu)</option>
-										    <option value="henry">Henry Weller</option>
-										    <option value="melissa">Melissa Du</option>
-										    <option value="alice">Alice Deng</option>
-										    <option value="venus">謝愷妍 (Venus Mia Tse)</option>
-										    <option value="ted">Ted Kornish</option>
-										    <option value="natalie">Natalie Muenster</option>
-										  </select>
-										 </div>
+										<div class="field third" id="inputFieldClick">
+											<input type="submit" value="注册" class="primary" />
+										</div>
 									</div>
-									<ul class="actions">
+<!-- 									<ul class="actions">
 										<li><input type="submit" value="注册" class="primary" /></li>
 										<li>
-											<!-- <a href="#adviceGivers" class="button">See Advice Givers</a> -->
 											<a href="#adviceGivers" class="button"> 建议人介绍</a>
 										</li>
-									</ul>
+									</ul> -->
 								</form>
 							</section>
+							<section>
+								<h1 style="font-size:2em; text-align:center;">How It Works</h1>
+								<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
+							</section>
 							<section id="#adviceGivers">
-									<header class="major">
-										<!-- <h2>Advice Givers You Can Talk To</h2> -->
-									</header>
+									<h1 style="font-size:2em; text-align:center;">People You Could Meet</h1>
 									<div class="posts">
 										<article>
 											<a class="image"><img src="images/xiangyang-min.jpg" alt="" /></a>
@@ -91,7 +90,6 @@
 											<ul class="listicle">
 												<li>怎样把您的孩子培养进哈佛、斯坦福、普林斯顿、耶鲁和麻省理工</li>
 											</ul>
-											<p class="listicle">咨询费: ¥ 520/hr </p>
 										</article>
 										<article>
 											<a class="image"><img src="images/venus-min.jpg" alt="" /></a>
@@ -101,7 +99,6 @@
 													<li>在美国大学读书（常青藤联盟）</li>
 													<li>申请美国研究生 (哈佛)</li>
 											</ul>
-											<p class="listicle">咨询费: ¥ 420/hr </p>
 										</article>
 										<article>
 											<a class="image"><img src="images/aiqi-min.jpeg" alt="" /></a>
@@ -111,7 +108,6 @@
 													<li>在美国大学读书</li>
 													<li>在美国的科技公司工作</li>
 											</ul>
-											<p class="listicle">咨询费: ¥ 420/hr </p>
 										</article>
 										<article>
 											<a class="image"><img src="images/kelly-min.jpeg" alt="" /></a>
@@ -122,7 +118,6 @@
 													<li>机器人创业公司产品经理，在机器人领域工作是什么样的体验？</li>
 													<li>现任微软产品经理，大公司和创业公司有什么不同？如何选择？怎么进入微软？</li>
 											</ul>
-											<p class="listicle">咨询费: ¥ 420/hr </p>
 										</article>
 										<article>
 											<a class="image"><img src="images/alice-min.jpg" alt="" /></a>
@@ -132,7 +127,6 @@
 												<li>在美国顶尖科技公司的面试技巧</li>
 												<li>在伯克利大学读书</li>
 											</ul>
-											<p class="listicle">咨询费: ¥ 220/hr </p>
 										</article>
 										<article>
 											<a class="image"><img src="images/kevin-min.jpg" alt="" /></a>
@@ -142,7 +136,6 @@
 													<li>在美国大学读书</li>
 													<li>在谷歌工作</li>
 											</ul>
-											<p class="listicle">咨询费: ¥ 220/hr </p>
 										</article>
 										<article>
 											<a class="image"><img src="images/fanjie-min.jpg" alt="" /></a>
@@ -152,7 +145,6 @@
 													<li> 在美国大学读书（常青藤联盟）</li>
 													<li>在美国的科技公司工作</li>
 											</ul>
-											<p class="listicle">咨询费: ¥ 420/hr </p>
 										</article>
 										<article>
 											<a class="image"><img src="images/melissa-min.jpg" alt="" /></a>
@@ -162,7 +154,6 @@
 												<li>在美国顶尖科技公司的面试技巧</li>
 												<li>在斯坦福大学读计算机科学</li>
 											</ul>
-											<p class="listicle">咨询费: ¥ 220/hr </p>
 										</article>
 										<article>
 											<a class="image"><img src="images/henry-min.jpg" alt="" /></a>
@@ -172,7 +163,6 @@
 												<li>说英语</li>
 												<li>在斯坦福大学读计算机科学</li>
 											</ul>
-											<p class="listicle">咨询费: ¥ 180/30 mins </p>
 										</article>
 										<article>
 											<a class="image"><img src="images/natalie-min.jpg" alt="" /></a>
@@ -182,7 +172,6 @@
 												<li>说英语</li>
 												<li>在斯坦福大学读计算机科学</li>
 											</ul>
-											<p class="listicle">咨询费: ¥ 180/30 mins </p>
 										</article>
 										<article>
 											<a class="image"><img src="images/ted-min.jpg" alt="" /></a>
@@ -192,12 +181,11 @@
 												<li>说英语</li>
 												<li>在硅谷创业</li>
 											</ul>
-											<p class="listicle">咨询费: ¥ 180/30 mins </p>
 										</article>
 									</div>
 								</section>
-								<section>
-									<h3>客户反馈</h3>
+								<h1 style="font-size:2em; text-align:center;">客户反馈</h1>
+								<section id="clientReviews">
 									<p>
 										<span class="image left" style="max-width: 20%"><img src="images/cindy-min.jpeg" alt="" /></span>
 										<blockquote>WenTi 在我寻找工作的过程中帮了我很多！能有机会和在百度工作的员工交流带给了我很多宝贵的见解。<br><br>- Wenjie Da</blockquote></p>
@@ -219,27 +207,10 @@
 										<div class="field third">
 											<input type="text" name="wechatID" id="wechatID" placeholder="你的微信账号" />
 										</div>
-										<div class = "field half">
-										  <select name="expert">
-										    <option disabled selected value="">请选择您想要的建议人</option>
-										    <!-- <option disabled selected value="">Please select who you'd like to speak with</option> -->
-										    <option value="xiangyang">杜向阳 (Xiangyang Du)</option>
-										    <option value="fanjie">Fanjie Xiao</option>
-										    <option value="kevin">程乐修 (Kevin Le-Hsiu Cheng)</option>
-										    <option value="aiqi">龚耘 (Kelly)</option>
-										    <option value="aiqi">刘艾琪 (Aiqi Liu)</option>
-										    <option value="henry">Henry Weller</option>
-										    <option value="melissa">Melissa Du</option>
-										    <option value="alice">Alice Deng</option>
-										    <option value="venus">謝愷妍 (Venus Mia Tse)</option>
-										    <option value="ted">Ted Kornish</option>
-										    <option value="natalie">Natalie Muenster</option>
-										  </select>
-										 </div>
+										<div class="field third" id="inputFieldClick">
+											<input type="submit" value="注册" class="primary" />
+										</div>
 									</div>
-									<ul class="actions">
-										<li><input type="submit" value="注册" class="primary" /></li>
-									</ul>
 								</form>
 							</section>
 <!-- 							<section>
@@ -280,7 +251,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src='assets/js/google-sheet.js'></script>
+			<!-- <script src='assets/js/google-sheet.js'></script> -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 			<script>
 				$(document).ready(function(){
