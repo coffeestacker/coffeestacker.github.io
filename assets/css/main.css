@@ -791,7 +791,7 @@ input, select, textarea {
 
 	input[type="text"],
 	input[type="password"],
-	input[type="email"],
+	input[type="wechatID"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -820,7 +820,7 @@ input, select, textarea {
 
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
-		input[type="email"]:invalid,
+		input[type="wechatID"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -828,7 +828,7 @@ input, select, textarea {
 
 		input[type="text"]:focus,
 		input[type="password"]:focus,
-		input[type="email"]:focus,
+		input[type="wechatID"]:focus,
 		select:focus,
 		textarea:focus {
 			-moz-animation: focus 0.1s;
@@ -864,7 +864,7 @@ input, select, textarea {
 
 	input[type="text"],
 	input[type="password"],
-	input[type="email"],
+	input[type="wechatID"],
 	select {
 		height: 2.75em;
 	}
@@ -1096,7 +1096,7 @@ input, select, textarea {
 
 		#signup-form input[type="text"],
 		#signup-form input[type="password"],
-		#signup-form input[type="email"] {
+		#signup-form input[type="wechatID"] {
 			width: 18em;
 		}
 
@@ -1119,7 +1119,7 @@ input, select, textarea {
 
 				#signup-form input[type="type"],
 				#signup-form input[type="password"],
-				#signup-form input[type="email"] {
+				#signup-form input[type="wechatID"] {
 					width: 100%;
 				}
 
