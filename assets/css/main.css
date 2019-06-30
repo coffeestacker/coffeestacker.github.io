@@ -24,8 +24,7 @@ input[type=wechatID] {
 }
 
 #email {
-	border-color:#00B894;
-	width: 274px; 
+	border-color:#00B894; 
 	height: 51px;
 	border-radius: 200px;
 }
@@ -1139,11 +1138,11 @@ input, select, textarea {
 				flex-direction: column;
 			}
 
-				#signup-form input[type="type"],
+				/*#signup-form input[type="type"],
 				#signup-form input[type="password"],
 				#signup-form input[type="wechatID"] {
 					width: 100%;
-				}
+				}*/
 
 				#signup-form > * {
 					margin: 1.25em 0 0 0;
