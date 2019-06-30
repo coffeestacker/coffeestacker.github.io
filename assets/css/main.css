@@ -24,7 +24,10 @@ input[type=wechatID] {
 }
 
 #email {
-	color: black;
+	border-color:#00B894;
+	width: 274px; 
+	height: 51px;
+	border-radius: 200px;
 }
 
 
@@ -954,6 +957,14 @@ input, select, textarea {
 
 	input[type="radio"] + label:before {
 		border-radius: 100%;
+	}
+
+	#registerButton {
+		width: 108px; 
+		height: 51px;
+		background: #00B894;
+		box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1);
+		border-radius: 200px;
 	}
 
 	::-webkit-input-placeholder {
