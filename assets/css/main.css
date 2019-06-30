@@ -19,8 +19,12 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-input[type=text] {
+input[type=wechatID] {
 	color: #00B894;
+}
+
+#email {
+	color: black;
 }
 
 
@@ -314,7 +318,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.75);
+		/*color: rgba(255, 255, 255, 0.75);*/
 		font-family: "Roboto", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -809,7 +813,7 @@ input, select, textarea {
 		border-radius: 6px;
 		border: none;
 		border: solid 2px rgba(255, 255, 255, 0.35);
-		color: inherit;
+		/*color: inherit;*/
 		display: block;
 		outline: 0;
 		padding: 0 1em;
@@ -953,7 +957,8 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		/*color: rgba(255, 255, 255, 0.5) !important;*/
+		color: #00B894 !important;
 		opacity: 1.0;
 	}
 
