@@ -307,7 +307,8 @@
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="button" value="Submit" id="#submit-form" class="btn btn-primary mr-2 mb-2">
+                  <!-- <button type="submit" id="#submit-form" class="btn btn-primary mr-2 mb-2">Submit</button> -->
+                  <input type="submit" value="Submit" id="#submit-form" class="btn btn-primary mr-2 mb-2">
                 </div>
               </div>
 
@@ -383,17 +384,6 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/google-sheet.js"></script>
-  <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw-FEKEjZ8dC-XCyCEKOI09HHBigdsN5bSr37JZDHB5eM6L6Hk/exec'
-        const form = document.forms['submit-to-google-sheet']
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-  </script>
-  
   <script src="js/main.js"></script>
     
   </body>
