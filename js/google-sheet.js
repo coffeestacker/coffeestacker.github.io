@@ -1,4 +1,4 @@
-var $form = $('form#test-form'),
+var $form = $('form#submit-to-google-sheet'),
     url = 'https://script.google.com/macros/s/AKfycbw-FEKEjZ8dC-XCyCEKOI09HHBigdsN5bSr37JZDHB5eM6L6Hk/exec'
 
 $('#submit-form').on('click', function(e) {

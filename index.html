@@ -278,7 +278,7 @@
 
             
 
-            <form action="#" class="p-5 bg-white">
+            <form name="submit-to-google-sheet" action="#" class="p-5 bg-white">
               
               <h2 class="h4 text-black mb-5">Leave your email and phone number, and we'll be in touch ASAP.</h2> 
 
@@ -307,11 +307,10 @@
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" value="Submit" class="btn btn-primary mr-2 mb-2">
+                  <input type="submit" value="Submit" id="#submit-form" class="btn btn-primary mr-2 mb-2">
                 </div>
               </div>
 
-  
             </form>
           </div>
         
@@ -384,6 +383,16 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/google-sheet.js"></script>
+<!--   <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw-FEKEjZ8dC-XCyCEKOI09HHBigdsN5bSr37JZDHB5eM6L6Hk/exec'
+        const form = document.forms['submit-to-google-sheet']
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+  </script> -->
   
   <script src="js/main.js"></script>
     
