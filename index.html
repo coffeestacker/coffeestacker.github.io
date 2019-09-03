@@ -278,10 +278,10 @@
 
             
 
-            <form id="submit-to-google-sheet" action="#" class="p-5 bg-white">
+            <form id="submit-to-google-sheet" action="#" class="p-5 bg-white" onsubmit="this.elements['timestamp'].value= new Date()">
               
               <h2 class="h4 text-black mb-5">Leave your email and phone number, and we'll be in touch ASAP.</h2> 
-
+              <input name="timestamp" type="hidden">
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
                   <label class="text-black" for="fname">Name</label>
