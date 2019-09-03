@@ -1,9 +1,7 @@
 // Variable to hold request
 var request;
-console.log("HERE");
 // Bind to the submit event of our form
 $("#submit-to-google-sheet").submit(function(event){
-    console.log("made it")
     // Abort any pending request
     if (request) {
         request.abort();
@@ -41,6 +39,7 @@ $("#submit-to-google-sheet").submit(function(event){
 
     // Callback handler that will be called on failure
     request.fail(function (jqXHR, textStatus, errorThrown){
+        $form[0].reset();
         // Log the error to the console
         console.error(
             "The following error occurred: "+
@@ -51,6 +50,7 @@ $("#submit-to-google-sheet").submit(function(event){
     // Callback handler that will be called regardless
     // if the request failed or succeeded
     request.always(function () {
+        $form[0].reset();
         // Reenable the inputs
         $inputs.prop("disabled", false);
     });
