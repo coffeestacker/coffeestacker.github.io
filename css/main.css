@@ -370,6 +370,12 @@ td, th {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 800px){
+  .mb-10 {
+    padding-top: 20px;
+  }
+}
+
 .mb-15 {
   margin-bottom: 15px;
 }
@@ -1924,6 +1930,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-gap {
   padding: 120px 0;
+}
+
+@media screen and (max-width: 800px){
+  .section-gap {
+    padding:200px 0;
+  }
 }
 
 .section-title {
